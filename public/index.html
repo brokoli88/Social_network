@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Social network</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" />
+		<link rel="stylesheet" type="text/css" href="/main.css">
+	</head>
+	<body onload="init()">
+		<input id="autocomplete" list="people" type="text" name="people" placeholder="Find person" onkeypress="findPerson()"/>
+			<datalist id="people"></datalist>
+		<a class="waves-effect waves-light btn" onclick="choosePerson()">Choose person</a>
+		<ul id='info'></ul>
+		<ul id="directFriends"></ul>
+		<ul id='friendsOfFriends'></ul>
+		<ul id='suggestedFriends'></ul>
+		<script src='main.js'></script>
+	</body>
+</html>
